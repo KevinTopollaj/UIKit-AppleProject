@@ -11,6 +11,9 @@ class ReminderListViewController: UICollectionViewController {
 
   typealias DataSource = UICollectionViewDiffableDataSource<Int, String>
   
+  //  A snapshot represents the state of your data at a specific point in time.
+  typealias Snapshot = NSDiffableDataSourceSnapshot<Int, String>
+  
   var dataSource: DataSource!
   
   override func viewDidLoad() {
@@ -38,6 +41,14 @@ class ReminderListViewController: UICollectionViewController {
       
       return collectionView.dequeueConfiguredReusableCell(using: cellRegistration, for: indexPath, item: itemIdentifier)
     }
+    
+    // initialize snapshot and apply it to datasource
+    var snapshot = Snapshot()
+    snapshot.appendSections([0])
+    snapshot.appendItems(Reminder.sampleData.map { $0.title })
+    dataSource.apply(snapshot)
+    
+    collectionView.dataSource = dataSource
   }
 
   private func listLayout() -> UICollectionViewCompositionalLayout {
