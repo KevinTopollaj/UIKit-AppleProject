@@ -31,6 +31,12 @@ extension ReminderListViewController {
     cell.backgroundConfiguration = backgroundConfiguration
   }
   
+  func completeReminder(with id: Reminder.ID) {
+    var reminder = reminder(for: id)
+    reminder.isComplete.toggle()
+    update(reminder, with: id)
+  }
+  
   private func doneButtonConfiguration(for reminder: Reminder) -> UICellAccessory.CustomViewConfiguration {
     let symbolName = reminder.isComplete ? "circle.fill" : "circle"
     let symbolConfiguration = UIImage.SymbolConfiguration(textStyle: .title1)
