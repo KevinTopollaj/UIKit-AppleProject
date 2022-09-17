@@ -26,6 +26,7 @@
 		0A8ECE0A28D6038E0079E37F /* UIView+PinnedSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8ECE0928D6038E0079E37F /* UIView+PinnedSubView.swift */; };
 		0A8ECE0C28D63B2B0079E37F /* TextFieldContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8ECE0B28D63B2B0079E37F /* TextFieldContentView.swift */; };
 		0A8ECE0E28D643A20079E37F /* UIContentConfiguration+Stateless.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8ECE0D28D643A20079E37F /* UIContentConfiguration+Stateless.swift */; };
+		0A8ECE1028D661680079E37F /* TextViewContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8ECE0F28D661680079E37F /* TextViewContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		0A8ECE0928D6038E0079E37F /* UIView+PinnedSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+PinnedSubView.swift"; sourceTree = "<group>"; };
 		0A8ECE0B28D63B2B0079E37F /* TextFieldContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldContentView.swift; sourceTree = "<group>"; };
 		0A8ECE0D28D643A20079E37F /* UIContentConfiguration+Stateless.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIContentConfiguration+Stateless.swift"; sourceTree = "<group>"; };
+		0A8ECE0F28D661680079E37F /* TextViewContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 				0A8ECE0928D6038E0079E37F /* UIView+PinnedSubView.swift */,
 				0A8ECE0B28D63B2B0079E37F /* TextFieldContentView.swift */,
 				0A8ECE0D28D643A20079E37F /* UIContentConfiguration+Stateless.swift */,
+				0A8ECE0F28D661680079E37F /* TextViewContentView.swift */,
 			);
 			path = ContentViews;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				0A8ECDFC28D261510079E37F /* ReminderDoneButton.swift in Sources */,
 				0A8ECE0A28D6038E0079E37F /* UIView+PinnedSubView.swift in Sources */,
 				0A8ECE0C28D63B2B0079E37F /* TextFieldContentView.swift in Sources */,
+				0A8ECE1028D661680079E37F /* TextViewContentView.swift in Sources */,
 				0A8ECE0328D3D12F0079E37F /* ReminderViewController+Row.swift in Sources */,
 				0A8ECDCC28CFA7B90079E37F /* SceneDelegate.swift in Sources */,
 				0A8ECDDF28CFA8F00079E37F /* Reminder.swift in Sources */,
