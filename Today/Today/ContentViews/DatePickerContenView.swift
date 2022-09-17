@@ -37,7 +37,7 @@ class DatePickerContentView: UIView, UIContentView {
     super.init(frame: .zero)
     
     addPinnedSubview(datePicker)
-    datePicker.datePickerStyle = .inline
+    datePicker.preferredDatePickerStyle = .inline
   }
   
   required init?(coder: NSCoder) {
