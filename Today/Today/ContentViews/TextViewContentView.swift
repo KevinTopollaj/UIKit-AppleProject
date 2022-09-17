@@ -22,9 +22,10 @@ class TextViewContentView: UIView, UIContentView {
   
   // MARK: -1 Properties -
   let textView = UITextView()
+  
   var configuration: UIContentConfiguration {
     didSet {
-      
+      configure(configuration: configuration)
     }
   }
   
