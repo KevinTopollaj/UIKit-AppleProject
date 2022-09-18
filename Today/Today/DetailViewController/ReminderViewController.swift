@@ -14,15 +14,21 @@ class ReminderViewController: UICollectionViewController {
   private typealias Snapshot = NSDiffableDataSourceSnapshot<Section, Row>
   
   // MARK: - Properties -
-  var reminder: Reminder
+  var reminder: Reminder {
+    didSet {
+      onChange(reminder)
+    }
+  }
   // a property that stores the edits until the user decides to save or discart them
   var workingReminder: Reminder
+  var onChange: (Reminder) -> Void
   private var dataSource: DataSource!
   
   // MARK: - Initializer -
-  init(reminder: Reminder) {
+  init(reminder: Reminder, onChange: @escaping (Reminder) -> Void) {
     self.reminder = reminder
     self.workingReminder = reminder
+    self.onChange = onChange
     
     var listConfiguration = UICollectionLayoutListConfiguration(appearance: .insetGrouped)
     listConfiguration.showsSeparators = false
