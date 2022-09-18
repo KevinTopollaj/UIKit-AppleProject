@@ -15,11 +15,14 @@ class ReminderViewController: UICollectionViewController {
   
   // MARK: - Properties -
   var reminder: Reminder
+  // a property that stores the edits until the user decides to save or discart them
+  var workingReminder: Reminder
   private var dataSource: DataSource!
   
   // MARK: - Initializer -
   init(reminder: Reminder) {
     self.reminder = reminder
+    self.workingReminder = reminder
     
     var listConfiguration = UICollectionLayoutListConfiguration(appearance: .insetGrouped)
     listConfiguration.showsSeparators = false
@@ -57,9 +60,9 @@ class ReminderViewController: UICollectionViewController {
     super.setEditing(editing, animated: animated)
     
     if editing {
-      updateSnapshotForEditing()
+      prepareForEditing()
     } else {
-      updateSnapshotForViewing()
+      prepareForViewing()
     }
     
   }
@@ -93,6 +96,11 @@ class ReminderViewController: UICollectionViewController {
     cell.tintColor = .todayPrimaryTint
   }
   
+  // When the user enters the editing mode
+  private func prepareForEditing() {
+    updateSnapshotForEditing()
+  }
+  
   // MARK: - Update Snapshot for Editing mode -
   private func updateSnapshotForEditing() {
     var snapshot = Snapshot()
@@ -101,6 +109,14 @@ class ReminderViewController: UICollectionViewController {
     snapshot.appendItems([.header(Section.date.name), .editDate(reminder.dueDate)], toSection: .date)
     snapshot.appendItems([.header(Section.notes.name), .editText(reminder.notes)], toSection: .notes)
     dataSource.apply(snapshot)
+  }
+  
+  // When the user leaves the editing mode
+  private func prepareForViewing() {
+    if workingReminder != reminder {
+      reminder = workingReminder
+    }
+    updateSnapshotForViewing()
   }
   
   // MARK: - Update Snapshot for Viewing mode -
