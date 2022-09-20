@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A4B46EF28DA545A003C5C5F /* ReminderListStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B46EE28DA545A003C5C5F /* ReminderListStyle.swift */; };
 		0A8ECDCA28CFA7B90079E37F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8ECDC928CFA7B90079E37F /* AppDelegate.swift */; };
 		0A8ECDCC28CFA7B90079E37F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8ECDCB28CFA7B90079E37F /* SceneDelegate.swift */; };
 		0A8ECDCE28CFA7B90079E37F /* ReminderListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8ECDCD28CFA7B90079E37F /* ReminderListViewController.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A4B46EE28DA545A003C5C5F /* ReminderListStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListStyle.swift; sourceTree = "<group>"; };
 		0A8ECDC628CFA7B90079E37F /* Today.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Today.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A8ECDC928CFA7B90079E37F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A8ECDCB28CFA7B90079E37F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				0A8ECDDE28CFA8F00079E37F /* Reminder.swift */,
 				0A8ECDF028D0E71F0079E37F /* Date+Today.swift */,
 				0A8ECDF528D115A00079E37F /* Color+Today.swift */,
+				0A4B46EE28DA545A003C5C5F /* ReminderListStyle.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 				0A8ECDF128D0E71F0079E37F /* Date+Today.swift in Sources */,
 				0A8ECE0128D3C7F70079E37F /* ReminderViewController.swift in Sources */,
 				0A8ECDCA28CFA7B90079E37F /* AppDelegate.swift in Sources */,
+				0A4B46EF28DA545A003C5C5F /* ReminderListStyle.swift in Sources */,
 				0A8ECE0E28D643A20079E37F /* UIContentConfiguration+Stateless.swift in Sources */,
 				0A8ECDFC28D261510079E37F /* ReminderDoneButton.swift in Sources */,
 				0A8ECE0A28D6038E0079E37F /* UIView+PinnedSubView.swift in Sources */,
