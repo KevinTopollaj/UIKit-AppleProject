@@ -119,10 +119,10 @@
 			isa = PBXGroup;
 			children = (
 				0A8ECDFB28D261510079E37F /* ReminderDoneButton.swift */,
+				0ADDC6E728DCDE7C00A50905 /* ProgressHeaderView.swift */,
 				0A8ECDCD28CFA7B90079E37F /* ReminderListViewController.swift */,
 				0A8ECDF328D1129C0079E37F /* ReminderListViewController+DataSource.swift */,
 				0A8ECDFD28D262AB0079E37F /* ReminderListViewController+Action.swift */,
-				0ADDC6E728DCDE7C00A50905 /* ProgressHeaderView.swift */,
 			);
 			path = ListViewController;
 			sourceTree = "<group>";
