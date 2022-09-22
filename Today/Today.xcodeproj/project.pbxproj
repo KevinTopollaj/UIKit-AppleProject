@@ -29,6 +29,7 @@
 		0A8ECE0E28D643A20079E37F /* UIContentConfiguration+Stateless.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8ECE0D28D643A20079E37F /* UIContentConfiguration+Stateless.swift */; };
 		0A8ECE1028D661680079E37F /* TextViewContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8ECE0F28D661680079E37F /* TextViewContentView.swift */; };
 		0A8ECE1228D664FD0079E37F /* DatePickerContenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8ECE1128D664FD0079E37F /* DatePickerContenView.swift */; };
+		0ADDC6E828DCDE7C00A50905 /* ProgressHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADDC6E728DCDE7C00A50905 /* ProgressHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		0A8ECE0D28D643A20079E37F /* UIContentConfiguration+Stateless.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIContentConfiguration+Stateless.swift"; sourceTree = "<group>"; };
 		0A8ECE0F28D661680079E37F /* TextViewContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewContentView.swift; sourceTree = "<group>"; };
 		0A8ECE1128D664FD0079E37F /* DatePickerContenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerContenView.swift; sourceTree = "<group>"; };
+		0ADDC6E728DCDE7C00A50905 /* ProgressHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				0A8ECDCD28CFA7B90079E37F /* ReminderListViewController.swift */,
 				0A8ECDF328D1129C0079E37F /* ReminderListViewController+DataSource.swift */,
 				0A8ECDFD28D262AB0079E37F /* ReminderListViewController+Action.swift */,
+				0ADDC6E728DCDE7C00A50905 /* ProgressHeaderView.swift */,
 			);
 			path = ListViewController;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0ADDC6E828DCDE7C00A50905 /* ProgressHeaderView.swift in Sources */,
 				0A8ECE0528D5D7F10079E37F /* ReminderViewController+Section.swift in Sources */,
 				0A8ECE1228D664FD0079E37F /* DatePickerContenView.swift in Sources */,
 				0A8ECDCE28CFA7B90079E37F /* ReminderListViewController.swift in Sources */,
