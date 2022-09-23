@@ -41,6 +41,7 @@ class ProgressHeaderView: UICollectionReusableView {
   // MARK: - Overrides -
   override func layoutSubviews() {
     super.layoutSubviews()
+    heightConstraint?.constant = progress * bounds.height
     containerView.layer.masksToBounds = true
     containerView.layer.cornerRadius = containerView.bounds.width * 0.5
   }
