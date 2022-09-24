@@ -22,6 +22,8 @@ extension ReminderListViewController {
     NSLocalizedString("Not completed", comment: "Reminder not completed value")
   }
   
+  private var reminderStore: ReminderStore { ReminderStore.shared }
+  
   /// Update Snapshots based on the Reminder ids
   func updateSnapshot(reloading idsThatChanged: [Reminder.ID] = []) {
     let ids = idsThatChanged.filter { id in filterReminders.contains(where: {$0.id == id} ) }
@@ -90,6 +92,24 @@ extension ReminderListViewController {
   }
   
   // MARK: - Helper Methods -
+  
+  func prepareReminderStore() {
+    // By creating a Task, you create a new unit of work that executes asynchronously.
+    Task {
+      do {
+        try await reminderStore.requestAccess()
+        reminders = try await reminderStore.readAll()
+      } catch TodayError.accessDenied, TodayError.accessRestricted {
+        #if DEBUG
+        reminders = Reminder.sampleData
+        #endif
+      } catch {
+        showError(error)
+      }
+      
+      updateSnapshot()
+    }
+  }
   
   func deleteReminder(with id: Reminder.ID) {
     let index = reminders.indexOfReminder(with: id)
