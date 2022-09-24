@@ -28,7 +28,7 @@ class ReminderStore {
     let ekReminders = try await ekStore.fetchReminders(matching: predicate)
     
     // The resulting array contains only the reminders that have alarms corresponding to their due dates.
-    let reminders: [Reminder] = ekReminders.compactMap { ekReminder in
+    let reminders: [Reminder] = try ekReminders.compactMap { ekReminder in
       do {
         return try Reminder(with: ekReminder)
       } catch TodayError.reminderHasNoDueDate {
