@@ -111,6 +111,7 @@ class ReminderListViewController: UICollectionViewController {
   }
   
   // MARK: - Navigate to Detail View -
+  
   func showDetail(for id: Reminder.ID) {
     let reminder = reminder(for: id)
     let viewController = ReminderViewController(reminder: reminder) { [weak self] reminder in
@@ -118,6 +119,22 @@ class ReminderListViewController: UICollectionViewController {
       self?.updateSnapshot(reloading: [reminder.id])  // update the UI
     }
     navigationController?.pushViewController(viewController, animated: true)
+  }
+  
+  // MARK: - Show errors -
+  func showError(_ error: Error) {
+    let alertTitle = NSLocalizedString("Error", comment: "Error alert title")
+    let alert = UIAlertController(title: alertTitle,
+                                  message: error.localizedDescription,
+                                  preferredStyle: .alert)
+    let actionTitle = NSLocalizedString("OK", comment: "Alert OK button title")
+    
+    alert.addAction(UIAlertAction(title: actionTitle,
+                                  style: .default,
+                                  handler: { [weak self] _ in
+      self?.dismiss(animated: true)
+    }))
+    present(alert, animated: true, completion: nil)
   }
 
   // MARK: - Create Layout -
