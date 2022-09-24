@@ -30,6 +30,7 @@
 		0A8ECE1028D661680079E37F /* TextViewContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8ECE0F28D661680079E37F /* TextViewContentView.swift */; };
 		0A8ECE1228D664FD0079E37F /* DatePickerContenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8ECE1128D664FD0079E37F /* DatePickerContenView.swift */; };
 		0ADDC6E828DCDE7C00A50905 /* ProgressHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADDC6E728DCDE7C00A50905 /* ProgressHeaderView.swift */; };
+		0ADDC6EC28DEE64700A50905 /* CAGradientLayer+ListStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADDC6EB28DEE64700A50905 /* CAGradientLayer+ListStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		0A8ECE0F28D661680079E37F /* TextViewContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewContentView.swift; sourceTree = "<group>"; };
 		0A8ECE1128D664FD0079E37F /* DatePickerContenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerContenView.swift; sourceTree = "<group>"; };
 		0ADDC6E728DCDE7C00A50905 /* ProgressHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressHeaderView.swift; sourceTree = "<group>"; };
+		0ADDC6EB28DEE64700A50905 /* CAGradientLayer+ListStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAGradientLayer+ListStyle.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,16 +92,12 @@
 		0A8ECDC828CFA7B90079E37F /* Today */ = {
 			isa = PBXGroup;
 			children = (
-				0A8ECDC928CFA7B90079E37F /* AppDelegate.swift */,
-				0A8ECDCB28CFA7B90079E37F /* SceneDelegate.swift */,
-				0A8ECDD728CFA7B90079E37F /* Info.plist */,
+				0ADDC6E928DEE5D500A50905 /* App */,
+				0ADDC6EA28DEE5EC00A50905 /* Resources */,
 				0A8ECDDD28CFA8C40079E37F /* Models */,
 				0A8ECDF228D112650079E37F /* ListViewController */,
 				0A8ECDFF28D3C7C10079E37F /* DetailViewController */,
 				0A8ECE0828D603380079E37F /* ContentViews */,
-				0A8ECDCF28CFA7B90079E37F /* Main.storyboard */,
-				0A8ECDD228CFA7B90079E37F /* Assets.xcassets */,
-				0A8ECDD428CFA7B90079E37F /* LaunchScreen.storyboard */,
 			);
 			path = Today;
 			sourceTree = "<group>";
@@ -111,6 +109,7 @@
 				0A8ECDF028D0E71F0079E37F /* Date+Today.swift */,
 				0A8ECDF528D115A00079E37F /* Color+Today.swift */,
 				0A4B46EE28DA545A003C5C5F /* ReminderListStyle.swift */,
+				0ADDC6EB28DEE64700A50905 /* CAGradientLayer+ListStyle.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -148,6 +147,26 @@
 				0A8ECE0D28D643A20079E37F /* UIContentConfiguration+Stateless.swift */,
 			);
 			path = ContentViews;
+			sourceTree = "<group>";
+		};
+		0ADDC6E928DEE5D500A50905 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0A8ECDC928CFA7B90079E37F /* AppDelegate.swift */,
+				0A8ECDCB28CFA7B90079E37F /* SceneDelegate.swift */,
+				0A8ECDD728CFA7B90079E37F /* Info.plist */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		0ADDC6EA28DEE5EC00A50905 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0A8ECDCF28CFA7B90079E37F /* Main.storyboard */,
+				0A8ECDD228CFA7B90079E37F /* Assets.xcassets */,
+				0A8ECDD428CFA7B90079E37F /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +259,7 @@
 				0A8ECE0728D600580079E37F /* ReminderViewController+CellConfiguration.swift in Sources */,
 				0A8ECDF628D115A00079E37F /* Color+Today.swift in Sources */,
 				0A8ECDF428D1129C0079E37F /* ReminderListViewController+DataSource.swift in Sources */,
+				0ADDC6EC28DEE64700A50905 /* CAGradientLayer+ListStyle.swift in Sources */,
 				0A8ECDFE28D262AB0079E37F /* ReminderListViewController+Action.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
