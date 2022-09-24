@@ -31,6 +31,7 @@
 		0A8ECE1228D664FD0079E37F /* DatePickerContenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8ECE1128D664FD0079E37F /* DatePickerContenView.swift */; };
 		0ADDC6E828DCDE7C00A50905 /* ProgressHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADDC6E728DCDE7C00A50905 /* ProgressHeaderView.swift */; };
 		0ADDC6EC28DEE64700A50905 /* CAGradientLayer+ListStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADDC6EB28DEE64700A50905 /* CAGradientLayer+ListStyle.swift */; };
+		0ADDC6EE28DF65B200A50905 /* TodayError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADDC6ED28DF65B200A50905 /* TodayError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		0A8ECE1128D664FD0079E37F /* DatePickerContenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerContenView.swift; sourceTree = "<group>"; };
 		0ADDC6E728DCDE7C00A50905 /* ProgressHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressHeaderView.swift; sourceTree = "<group>"; };
 		0ADDC6EB28DEE64700A50905 /* CAGradientLayer+ListStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAGradientLayer+ListStyle.swift"; sourceTree = "<group>"; };
+		0ADDC6ED28DF65B200A50905 /* TodayError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				0A8ECDF528D115A00079E37F /* Color+Today.swift */,
 				0A4B46EE28DA545A003C5C5F /* ReminderListStyle.swift */,
 				0ADDC6EB28DEE64700A50905 /* CAGradientLayer+ListStyle.swift */,
+				0ADDC6ED28DF65B200A50905 /* TodayError.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 				0A8ECDCE28CFA7B90079E37F /* ReminderListViewController.swift in Sources */,
 				0A8ECDF128D0E71F0079E37F /* Date+Today.swift in Sources */,
 				0A8ECE0128D3C7F70079E37F /* ReminderViewController.swift in Sources */,
+				0ADDC6EE28DF65B200A50905 /* TodayError.swift in Sources */,
 				0A8ECDCA28CFA7B90079E37F /* AppDelegate.swift in Sources */,
 				0A4B46EF28DA545A003C5C5F /* ReminderListStyle.swift in Sources */,
 				0A8ECE0E28D643A20079E37F /* UIContentConfiguration+Stateless.swift in Sources */,
