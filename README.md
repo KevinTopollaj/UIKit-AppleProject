@@ -21,5 +21,6 @@
 - Implement Swift concurrency techniques as you integrate with the EventKit API.
 - Implement a store abstraction to facilitate the persistence of the data.
 - Implement permission to access user data.
+- Implement the respond to change notifications.
 
  
