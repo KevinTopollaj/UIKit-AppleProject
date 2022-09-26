@@ -15,6 +15,7 @@
 - Implement Filtering.
 - Implement UISegmentedControl.
 - Implement Custom View as a header.
+- Implement Animation.
 - Implement constrains programmatically.
 - Implement Gradients using `CAGradientLayer`.
 - Implement `EventKit` framework to request access to a user’s calendar events and reminders and to share data between the Reminders and Your apps.
